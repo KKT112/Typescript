@@ -9,6 +9,8 @@ interface South extends Movie{
 }
 
 function movie1(obj:South){
+  obj.name=obj.name;
+
     
 }
 movie1({
@@ -18,3 +20,4 @@ movie1({
     action:"good",
 
 })
+console.log(movie1);

@@ -6,3 +6,11 @@ validate({
     Ischildren: false,
 });
 console.log(validate);
+var subscribe = {
+    id: 1,
+    name: 'Paris',
+    sign: function () {
+        return "Bonjour";
+    }
+};
+console.log(subscribe);
