@@ -1,5 +1,5 @@
 
-function abcd(name :string,age:number,another_fun : (para1:string)=>void){
+function abcd(name :string,age:number,another_fun : (para1:string)=>void):void{
 
     another_fun("hello");
 

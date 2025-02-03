@@ -14,5 +14,8 @@ class UserName{
  let user1 = new UserName("kkt",22);
 
  console.log(user1.getName());
- console.log(user1.setname("tank kuldeep")); // check the 
+
+ let b12 = user1.name = "kkt"
+ console.log(b12)
+ console.log(user1.setname("kkt"))// check the 
  

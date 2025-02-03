@@ -1,4 +1,3 @@
-//returntype..,
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -35,10 +34,10 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-function add(a, b) {
-    return a + b;
+//returntype..,
+function f() {
+    return { x: 10, y: 3 };
 }
-var latest;
 //here return type of latest is numberr type..,
 //promise await and async function
 var url = "https://jsonplaceholder.typicode.com/todos/1";
@@ -55,7 +54,7 @@ function data() {
             switch (_a.label) {
                 case 0:
                     _a.trys.push([0, 3, , 4]);
-                    url2 = "https://sonplaceholder.typicode.com/todos/2";
+                    url2 = "https://jsonplaceholder.typicode.com/todos/2";
                     return [4 /*yield*/, fetch(url2)];
                 case 1:
                     fetchData2 = _a.sent();
@@ -74,3 +73,14 @@ function data() {
     });
 }
 data();
+//mypromise in typescript
+var mypromise = new Promise(function (resolve, reject) {
+    console.log("before executing promise");
+    setTimeout(function () {
+        //console.log("promise after running..,");
+        //resolve(["kuldeep","tank"]);
+        console.log("promise rejected time");
+        reject(new Error("sycessfully rejected"));
+    }, 2000);
+});
+mypromise.then(function (res) { console.log(res); }).catch(function (error) { console.log(error); });

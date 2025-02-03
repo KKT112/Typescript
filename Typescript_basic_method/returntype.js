@@ -1,4 +1,3 @@
-//returntype..,
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -35,42 +34,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-function add(a, b) {
-    return a + b;
-}
-var latest;
-//here return type of latest is numberr type..,
-//promise await and async function
-var url = "https://jsonplaceholder.typicode.com/todos/1";
-var fetchData = fetch(url)
-    .then(function (res) { return res.json(); })
-    .then(function (data) { return console.log(data); })
-    .catch(function (Error) { return console.log("shown error"); });
-console.log(fetchData);
-//try &catch in error solve
-function data() {
-    return __awaiter(this, void 0, void 0, function () {
-        var url2, fetchData2, res2, error_1;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0:
-                    _a.trys.push([0, 3, , 4]);
-                    url2 = "https://sonplaceholder.typicode.com/todos/2";
-                    return [4 /*yield*/, fetch(url2)];
-                case 1:
-                    fetchData2 = _a.sent();
-                    return [4 /*yield*/, fetchData2.json()];
-                case 2:
-                    res2 = _a.sent();
-                    console.log(res2);
-                    return [3 /*break*/, 4];
-                case 3:
-                    error_1 = _a.sent();
-                    console.log("in message api error");
-                    return [3 /*break*/, 4];
-                case 4: return [2 /*return*/];
-            }
-        });
+var _this = this;
+var fun = function () { return __awaiter(_this, void 0, void 0, function () {
+    var val;
+    return __generator(this, function (_a) {
+        val = "string";
+        return [2 /*return*/, val];
     });
-}
-data();
+}); };
+var message = "good";
+console.log(message);
