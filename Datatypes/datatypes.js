@@ -26,7 +26,7 @@ b = 1.2;
 b = "xyz";
 console.log(b);
 //unknown
-var abc;
+let abc;
 abc = 12;
 abc = "kuldeep";
 if (typeof abc === "number") {
@@ -36,6 +36,7 @@ if (typeof abc === "number") {
 function delta() {
     console.log("hii, bro");
 }
+delta();
 //null and multiple asssign with |
 var fruit = " "; //"hello"
 //Never : that variable can be assign at th enext statement can be not printed and never show..,
